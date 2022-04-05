@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+</head>
+
+<body>
+	<form action="#" th:action="@{/sistema/reservacion}" th:object="${ingresoReserva}" method="POST"> 
+	<table>
+	<tr>
+			<td>
+				<label>Placa:</label>
+			</td>
+			<td>
+				<input type="text" id="placa" th:field="*{placa}">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Cedula:</label>
+			</td>
+			<td>
+				<input type="text" id="cedula" th:field="*{cedula}">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Fecha inicio:</label>
+			</td>
+			<td>
+				<input type="datetime-local" id="fechaI" th:field="*{fechaI}">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Fecha fin:</label>
+			</td>
+			<td>
+				<input type="datetime-local" id="fechaF" th:field="*{fechaF}">
+			</td>
+		</tr>
+		</table>
+		<input type="submit" value="Validar">
+	</form>
+</body>
+
+
+</html>

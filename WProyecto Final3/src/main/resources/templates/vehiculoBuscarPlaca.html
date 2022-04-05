@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+</head>
+
+<body>
+
+	<form action="#" th:action="@{/sistema/mostrarVpP}" th:object="${vehiculo}" method="get"> 
+	<table>
+	<tr>
+			<td>
+				<label>Placa:</label>
+			</td>
+			<td>
+				<input type="text" id="placa" th:field="*{placa}">
+			</td>
+		</tr>
+		</table>
+		<input type="submit" value="Buscar">
+	</form>
+</body>
+
+
+</html>

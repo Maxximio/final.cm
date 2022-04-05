@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+</head>
+
+<body>
+
+	<form action="#" th:action="@{/sistema/reportev}" th:object="${aniomes}" method="GET">
+		<table>
+			<tr>
+				<td>
+					<label>Anio:</label>
+				</td>
+				<td>
+					<input type="text" id="anio" th:field="*{anio}">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>Mes:</label>
+				</td>
+				<td>
+					<input type="text" id="mes" th:field="*{mes}">
+				</td>
+			</tr>
+		</table>
+		<input type="submit" value="Generar Reporte">
+	</form>
+</body>
+
+
+</html>

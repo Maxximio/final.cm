@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+</head>
+
+<body>
+
+	<form action="#" th:action="@{/sistema/insertarveh}" th:object="${vehiculo}" method="post"> 
+	<table>
+	<tr>
+			<td>
+				<label>Placa:</label>
+			</td>
+			<td>
+				<input type="text" id="placa" th:field="*{placa}">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Modelo:</label>
+			</td>
+			<td>
+				<input type="text" id="modelo" th:field="*{modelo}">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Marca:</label>
+			</td>
+			<td>
+				<input type="text" id="marca" th:field="*{marca}">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Anio de Fabricacion:</label>
+			</td>
+			<td>
+				<input type="date" id="anioFab" th:field="*{anioFab}">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Pais:</label>
+			</td>
+			<td>
+				<input type="text" id="pais" th:field="*{pais}">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Cilindraje:</label>
+			</td>
+			<td>
+				<input type="text" id="cilindraje" th:field="*{cilindraje}">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Avaluo:</label>
+			</td>
+			<td>
+				<input type="number" id="avaluo" th:field="*{avaluo}">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Valor por dia:</label>
+			</td>
+			<td>
+				<input type="number" id="valorDia" th:field="*{valorDia}">
+			</td>
+		</tr>
+		</table>
+		<input type="submit" value="Guardar">
+	</form>
+</body>
+
+
+</html>

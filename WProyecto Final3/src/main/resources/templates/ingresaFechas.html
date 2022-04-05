@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+</head>
+
+<body>
+
+	<form action="#" th:action="@{/sistema/reporte}" th:object="${reserva}" method="GET">
+		<table>
+			<tr>
+				<td>
+					<label>FechaI:</label>
+				</td>
+				<td>
+					<input type="datetime-local" id="fechaInicio" th:field="*{fechaInicio}">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<label>fechaFin:</label>
+				</td>
+				<td>
+					<input type="datetime-local" id="fechaFin" th:field="*{fechaFin}">
+				</td>
+			</tr>
+		</table>
+		<input type="submit" value="Generar Reporte">
+	</form>
+</body>
+
+
+</html>

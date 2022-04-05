@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+</head>
+
+<body>
+
+	<form action="#" th:action="@{/sistema/buscarDisponibles}" th:object="${vehiculo}" method="get"> 
+	<table>
+	<tr>
+			<td>
+				<label>Modelo:</label>
+			</td>
+			<td>
+				<input type="text" id="modelo" th:field="*{modelo}">
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<label>Marca:</label>
+			</td>
+			<td>
+				<input type="text" id="marca" th:field="*{marca}">
+			</td>
+		</tr>
+		</table>
+		<input type="submit" value="Buscar">
+	</form>
+</body>
+
+
+</html>

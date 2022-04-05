@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+</head>
+
+<body>
+
+	<form action="#" th:action="@{/sistema/finalizar}" th:object="${cobro}" method="GET">
+		<table>
+			<tr>
+				<td>
+					<label>Tarjeta:</label>
+				</td>
+				<td>
+					<input type="text" id="terjeta" th:field="*{terjeta}">
+				</td>
+			</tr>
+		</table>
+		<input type="submit" value="Guardar Tarjeta">
+	</form>
+</body>
+
+
+</html>

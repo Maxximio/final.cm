@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+</head>
+
+<body>
+
+	<form action="#" th:action="@{/sistema/procesoRetiro}" th:object="${reserva}" method="get"> 
+	<table>
+	<tr>
+			<td>
+				<label>Numero de Reserva:</label>
+			</td>
+			<td>
+				<input type="text" id="numeroReserva" th:field="*{numeroReserva}">
+			</td>
+		</tr>
+		</table>
+		<input type="submit" value="Retirar">
+	</form>
+</body>
+
+
+</html>
